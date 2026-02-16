@@ -1,0 +1,13 @@
+.container {
+  background-color: black;
+  color: red;
+  border: 2px solid purple;
+  border-radius: 12px;
+  padding: 20px;
+  animation: fade 2s;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
