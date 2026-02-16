@@ -1,10 +1,25 @@
 :root {
-  --background-color: #121212;
-  --text-color: #E0E0E0;
-  --primary-color: #BB86FC;
-  --secondary-color: #03DAC6;
-  --error-color: #CF6679;
-  --warning-color: #FFB74D;
-  --info-color: #2196F3;
-  --success-color: #00E676;
+  --primary-color: #ff6347;
+  --secondary-color: #4caf50;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-size: 16px;
+  --animation-speed: 0.3s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.custom-cursor {
+  cursor: url('path/to/your/cursor.png'), auto;
+}
+
+body {
+  font-family: var(--font-family);
+  animation: fade-in var(--animation-speed) ease-in;
 }
